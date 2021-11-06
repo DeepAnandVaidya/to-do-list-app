@@ -1,0 +1,16 @@
+[
+    {
+        "Title": "Shopping",
+        "Desctiption": "Need to buy fruits.",
+        "DueDate": "2021-11-02",
+        "DueTime": "13:55",
+        "IsComplete": false
+    },
+    {
+        "Title": "Laundry",
+        "Desctiption": "Need to wash my clothes.",
+        "DueDate": "2021-11-04",
+        "DueTime": "09:10",
+        "IsComplete": false
+    }
+]

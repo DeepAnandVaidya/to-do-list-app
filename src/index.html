@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TO-DO Application</title>
+</head>
+
+<body>
+    <div class="containter">
+        <div class="container-list">
+            <ul id="list" class="list"></ul>
+        </div>
+    </div>
+    <button id="submit" class="button">ADD TASK</button>
+
+    <div class="popup">
+        <div class="popup-content">
+            <p>ADD NEW TASK!</p>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="description" placeholder="Description">
+            <input type="date" id="due-date" placeholder="Due Date">
+            <input type="time" id="due-time" placeholder="Due Time">
+            <button class="save-button" id="save-button">SAVE</button>
+            <button class="close-button" id="close-button">X</button>
+        </div>
+    </div>
+
+    <div class="popup-detail-view">
+        <div class="popup-content-detail-view">
+            <p>TASK DETAILS</p>
+            <div class="inner-container">
+                <p id="title-detail">Title: </p>
+                <p id="description-detail">Description: </p>
+                <p id="due-date-detail">Due Date: </p>
+                <p id="due-time-detail">Due Time: </p>
+                <p id="completed-detail">Completed: </p>
+            </div>
+            <button class="close-button-detail-view" id="close-button-detail-view">X</button>
+        </div>
+    </div>
+</body>
+
+</html>

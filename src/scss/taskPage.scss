@@ -1,0 +1,148 @@
+@import 'mixins';
+
+// common styles application to all elements in the document
+html {
+    font-family: $font-family;
+    overflow-x: hidden;
+
+    // styles for the body element
+    body {
+        background-color: #ffc400;
+        height: 100%;
+        width: 100%;
+
+        // styles for the container
+        .containter {
+            @include resize(730px, 500px);
+            position: relative;
+            top: 200px;
+            margin: auto;
+            background-color: #FFFFFF;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            // styles for the list elements
+            .list {
+                list-style-type: none;
+
+                // styles for all the list items
+                li {
+                    position: relative;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 690px;
+                    background-color: #ffffcc;
+                    border-radius: 5px;
+                    transition: 0.4s;
+                    left: -19px;
+                }
+
+                // style for the complete task button
+                button[name^=complete-button] {
+                    @include positionRelatively(-25px, 298px);
+                    height: 30px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    border: none;
+                    font-weight: bold;
+                    background-color: #33cc33;
+                    color: #005266;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.5);
+                }
+
+                // hover effect for the complete task button
+                button[name^=complete-button]:hover {
+                    background-color: #00802b;
+                    color: #FFFFFF;
+                }
+
+                // styles for the veiw details button
+                button[name^=detail-button] {
+                    @include positionRelatively(-25px, 48px);
+                    height: 30px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    border: none;
+                    font-weight: bold;
+                    background-color: #009ccc;
+                    color: #FFFFFF;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.5);
+                }
+
+                // hover effect for the view details button
+                button[name^=detail-button]:hover {
+                    background-color: #003b4d;
+                    color: #FFFFFF;
+                }
+
+                // styles for the delete task button
+                button[name^=delete-button] {
+                    @include positionRelatively(-25px, 189px);
+                    @include resize(40px, 38px);
+                    border: none;
+                    background-color: transparent;
+                    color: #e63900;
+                    font-family: $font-family;
+                    font-weight: 1000;
+                    font-size: 15px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: 0.4s;
+                }
+
+                // hover effect for the delete button
+                button[name^=delete-button]:hover {
+                    background-color: #b32d00;
+                    color: #FFFFFF;
+                    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.5);
+                }
+
+                div {
+                    padding: 10px;
+                }
+
+                li:hover {
+                    background-color: #ffdd99;
+                }
+
+                p {
+                    text-align: left;
+                    @include positionRelatively(20px, 19px);
+                    font-weight: bold;
+                }
+            }
+
+            .fieldset {
+                border: none;
+            }
+        }
+
+        .button {
+            @include resize(400px, 35px);
+            border: none;
+            border-radius: 5px;
+            @include positionRelatively(-367px, 562px);
+            background-color: #005266;
+            color: #e6f9ff;
+            box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+            font-weight: bold;
+            font-family: $font-family;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .button:hover {
+            background-color: #007a99;
+        }
+    }
+
+}

@@ -1,0 +1,12 @@
+// mixin that positions elements relatively
+@mixin positionRelatively($top, $left) {
+    position: relative;
+    top: $top;
+    left: $left;
+}
+
+// resizes the element
+@mixin resize($width, $height) {
+    width: $width;
+    height: $height;
+}
